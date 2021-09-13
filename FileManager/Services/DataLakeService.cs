@@ -7,7 +7,7 @@ namespace FileManager.Services
 {
     public class DataLakeService
     {
-        public 
-        public DataLakeService()=>
+        public DataLakeClient dataLakeClient;
+        public DataLakeService() => dataLakeClient = new DataLakeClient();
     }
 }

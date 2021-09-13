@@ -27,8 +27,20 @@ namespace FileManager.Services
             }
         }
 
-        MudTheme DarkTheme = new MudTheme()
+        public string ToggleModeIcon()
         {
+            if (CurrentTheme == DefaultTheme)
+            {
+                return Icons.Filled.DarkMode;
+            }
+            else
+            {
+                return Icons.Filled.LightMode;
+            }
+        }
+
+        MudTheme DarkTheme = new MudTheme()
+        { 
             Palette = new Palette()
             {
                 Black = "#27272f",
